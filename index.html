@@ -16,12 +16,14 @@
 
         header {
             text-align: center;
-            padding: 80px 20px;
+            padding: 60px 20px;
             background: rgba(249, 243, 227, 0.30);
         }
 
         header img {
             width: 180px;
+            max-width: 40%;
+            height: auto;
             margin-bottom: 20px;
         }
 
@@ -122,13 +124,67 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* ---------------------- */
+        /*      RESPONSIVE        */
+        /* ---------------------- */
+
+        /* Tablettes */
+        @media (max-width: 1024px) {
+            .menu {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+        }
+
+        /* Mobiles */
+        @media (max-width: 600px) {
+            header {
+                padding: 40px 15px;
+            }
+
+            header img {
+                width: 120px;
+                max-width: 60%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .menu {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .menu a {
+                font-size: 18px;
+                padding: 20px;
+            }
+
+            .contact {
+                margin: 20px;
+                padding: 25px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo.jpg" alt="Logo Anaële Accompagnement"style="width: 20%; height: 20%;">
+    <img src="logo.jpg" alt="Logo Anaële Accompagnement">
     <h1>Anaële Accompagnement</h1>
     <p>
         Educatrice de jeunes enfants en libérale ,j'accompagne dans les différentes étapes de la petites enfance et de la parentalité/post partum.
