@@ -3,14 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <title>Conditions Générales de Vente – Anaële Accompagnement</title>
+
 <style>
-body { font-family: Arial; margin: 40px; color:#6E6E6E; }
-h1 { color:#4A6A8A; }
-a { color:#4A6A8A; }
+body {
+    margin: 0;
+    font-family: Arial Narrow;
+    color: #bc9c83;
+    background: rgba(249, 243, 227, 0.30);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #8a704a;
+    margin-top: 30px;
+}
+
+a {
+    color: #8a704a;
+}
+
+img.centre {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+}
+
+/* Bouton retour */
+.bouton-retour {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #A7C4A0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.bouton-retour:hover {
+    background: #6B7A3A;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    img.centre {
+        max-width: 100%;
+    }
+}
 </style>
 </head>
 
 <body>
+
 <h1>Conditions Générales de Vente</h1>
 
 <p>
@@ -23,6 +74,7 @@ Toute séance réservée est due sauf annulation au moins 24h à l’avance.
 Les tarifs sont indiqués sur la page Prestations et peuvent être révisés à tout moment.
 </p>
 
-<p><a href="index.html">← Retour à l’accueil</a></p>
+<a href="index.html" class="bouton-retour">Retour à l’accueil</a>
+
 </body>
 </html>
