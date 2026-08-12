@@ -10,21 +10,35 @@ body {
     font-family: Arial Narrow;
     color: #bc9c83;
     background: rgba(249, 243, 227, 0.30);
+    text-align: center; /* Centrage global du texte */
+    padding: 20px;
 }
 
 h1 {
     color: #8a704a;
-    text-align: center;
+    margin-top: 30px;
 }
 
 a {
     color: #8a704a;
 }
 
-.centre {
+img.centre {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    img.centre {
+        max-width: 100%;
+    }
 }
 </style>
 </head>
@@ -52,9 +66,6 @@ pour soutenir les parents, apaiser les enfants et
 favoriser un développement harmonieux.
 </p>
 
-<img src="logo.jpg" alt="Logo Anaële" class="centre" style="width: 50%; height: 50%;">
+<img src="logo.jpg" alt="Logo Anaële" class="centre">
 
-<p><a href="index.html">← Retour à l’accueil</a></p>
-
-</body>
-</html>
+<p><a href="index.html">← Retour à l’accueil
