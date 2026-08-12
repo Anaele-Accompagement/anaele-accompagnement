@@ -10,7 +10,7 @@ body {
     font-family: Arial Narrow;
     color: #bc9c83;
     background: rgba(249, 243, 227, 0.30);
-    text-align: center; /* Centrage global du texte */
+    text-align: center;
     padding: 20px;
 }
 
@@ -28,6 +28,23 @@ img.centre {
     margin: 20px auto;
     max-width: 80%;
     height: auto;
+}
+
+/* Bouton retour */
+.bouton-retour {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #A7C4A0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.bouton-retour:hover {
+    background: #4A6A8A;
 }
 
 /* Responsive */
@@ -68,4 +85,7 @@ favoriser un développement harmonieux.
 
 <img src="logo.jpg" alt="Logo Anaële" class="centre">
 
-<p><a href="index.html">← Retour à l’accueil
+<a href="index.html" class="bouton-retour">Retour à l’accueil</a>
+
+</body>
+</html>
